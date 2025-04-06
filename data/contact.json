@@ -1,0 +1,30 @@
+[
+  {
+    "name": "ARNOLD PEREZ FAHO MBATCHOU",
+    "email": "perezmbatchou0@gmail.com",
+    "subject": "schools",
+    "message": "je test ",
+    "date": "2025-04-04T23:58:01.656Z"
+  },
+  {
+    "name": "test 2",
+    "email": "test@gmail.com",
+    "subject": "media",
+    "message": "je test 2",
+    "date": "2025-04-05T03:08:22.728Z"
+  },
+  {
+    "name": "valentina",
+    "email": "valentina.banzet@gmail.com",
+    "subject": "media",
+    "message": "test 3",
+    "date": "2025-04-05T09:23:54.253Z"
+  },
+  {
+    "name": "moi moi",
+    "email": "lemonde@gmail.com",
+    "subject": "media",
+    "message": "test 4",
+    "date": "2025-04-05T09:55:52.477Z"
+  }
+]

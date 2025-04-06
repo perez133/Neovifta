@@ -14,7 +14,7 @@ export function Footer() {
               <span className="text-lg font-bold text-neogreen">NeoVifta</span>
             </div>
             <p className="text-gray-600 text-sm">
-              Ensemble, transformons l'éco-anxiété en action positive pour un avenir meilleur.
+              Ensemble, transformons l&apos;éco-anxiété en action positive pour un avenir meilleur.
             </p>
           </div>
 

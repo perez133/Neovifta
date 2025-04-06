@@ -83,7 +83,7 @@ export default function AboutPage() {
             className="mb-8"
           />
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Chez NeoVifta, nous accompagnons les jeunes dans leur parcours face à l'éco-anxiété, 
+            Chez NeoVifta, nous accompagnons les jeunes dans leur parcours face à l&apos;éco-anxiété,
             transformant leurs préoccupations en actions positives pour la planète.
           </p>
         </motion.section>
@@ -135,13 +135,13 @@ export default function AboutPage() {
           
           <div className="bg-card p-8 md:p-12 rounded-lg shadow-md">
             <p className="text-muted-foreground mb-4">
-              NeoVifta est né d'une prise de conscience : l'éco-anxiété touche de plus en plus 
+              NeoVifta est né d&apos;une prise de conscience : l&apos;éco-anxiété touche de plus en plus
               de jeunes, mais peu de ressources existent pour les accompagner. Notre fondatrice, 
               elle-même concernée, a décidé de créer un espace où cette anxiété peut se transformer 
               en force motrice pour le changement.
             </p>
             <p className="text-muted-foreground">
-              Aujourd'hui, nous sommes fiers d'avoir accompagné des centaines de jeunes dans leur 
+              Aujourd&apos;hui, nous sommes fiers d&apos;avoir accompagné des centaines de jeunes dans leur
               parcours, les aidant à trouver un équilibre entre conscience environnementale et 
               bien-être mental.
             </p>

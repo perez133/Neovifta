@@ -79,7 +79,7 @@ export default function ImpactPage() {
         <h1 className="text-4xl font-bold text-center mb-8">Notre Impact</h1>
         
         <p className="text-lg text-gray-600 dark:text-gray-300 text-center mb-12">
-          Face à l'urgence climatique, nous développons des solutions innovantes pour accompagner les jeunes dans leur parcours face à l'éco-anxiété.
+          Face à l&apos;urgence climatique, nous développons des solutions innovantes pour accompagner les jeunes dans leur parcours face à l&apos;éco-anxiété.
         </p>
 
         <div className="grid md:grid-cols-2 gap-8 mb-16">
@@ -90,7 +90,7 @@ export default function ImpactPage() {
               </div>
               <h3 className="text-xl font-semibold mb-2">État des Lieux</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                68% des jeunes ressentent un profond sentiment d'effondrement face à l'inaction climatique (CREDOC, 2021)
+                68% des jeunes ressentent un profond sentiment d&apos;effondrement face à l&apos;inaction climatique (CREDOC, 2021)
               </p>
             </div>
           </Card>
@@ -109,15 +109,15 @@ export default function ImpactPage() {
         </div>
 
         <Card className="p-8 mb-16">
-          <h3 className="text-2xl font-semibold mb-6">L'Éco-anxiété par Tranche d'Âge</h3>
+          <h3 className="text-2xl font-semibold mb-6">L&apos;Éco-anxiété par Tranche d&apos;Âge</h3>
           <p className="text-gray-600 dark:text-gray-300 mb-8">
-            Les jeunes sont particulièrement touchés par l'éco-anxiété, avec des manifestations comme les troubles du sommeil et les crises d'angoisse.
+            Les jeunes sont particulièrement touchés par l&apos;éco-anxiété, avec des manifestations comme les troubles du sommeil et les crises d&apos;angoisse.
           </p>
           <Line data={ecoAnxietyByAgeData} options={chartOptions} />
         </Card>
 
         <Card className="p-8 mb-16">
-          <h3 className="text-2xl font-semibold mb-6">Profils d'Éco-anxiété</h3>
+          <h3 className="text-2xl font-semibold mb-6">Profils d&apos;Éco-anxiété</h3>
           <p className="text-gray-600 dark:text-gray-300 mb-8">
             Notre approche est adaptée aux différents profils identifiés dans nos études.
           </p>
@@ -144,7 +144,7 @@ export default function ImpactPage() {
               </div>
               <h3 className="text-xl font-semibold mb-2">Programme Digital</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Application mobile gamifiée pour encourager l'action positive
+                Application mobile gamifiée pour encourager l&apos;action positive
               </p>
             </div>
           </Card>
@@ -156,7 +156,7 @@ export default function ImpactPage() {
               </div>
               <h3 className="text-xl font-semibold mb-2">Communauté Solidaire</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Espace d'échange et de soutien entre pairs
+                Espace d&apos;échange et de soutien entre pairs
               </p>
             </div>
           </Card>
@@ -171,11 +171,11 @@ export default function ImpactPage() {
             </li>
             <li className="flex items-center">
               <div className="h-2 w-2 bg-neogreen rounded-full mr-3"></div>
-              <span>Phase 2 (Janvier-Juin 2026) : Expansion du réseau d'écoles et validation du concept d'application</span>
+              <span>Phase 2 (Janvier-Juin 2026) : Expansion du réseau d&apos;écoles et validation du concept d&apos;application</span>
             </li>
             <li className="flex items-center">
               <div className="h-2 w-2 bg-neogreen rounded-full mr-3"></div>
-              <span>Phase 3 (Septembre 2026-2027) : Développement et lancement de l'application mobile</span>
+              <span>Phase 3 (Septembre 2026-2027) : Développement et lancement de l&apos;application mobile</span>
             </li>
           </ul>
         </Card>

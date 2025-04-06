@@ -72,7 +72,7 @@ export default function HomePage() {
             Retrouve la paix dans un monde éco-conscient
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-            73% des jeunes de 16-25 ans sont touchés par l'éco-anxiété. NeoVifta t'aide à transformer cette préoccupation en action positive.
+            73% des jeunes de 16-25 ans sont touchés par l&apos;éco-anxiété. NeoVifta t&apos;aide à transformer cette préoccupation en action positive.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/a-propos">
@@ -164,7 +164,7 @@ export default function HomePage() {
               Notre Manifesto
             </h2>
             <p className="text-xl leading-relaxed">
-              Chez NeoVifta, nous croyons que l'éco-anxiété est un appel à agir, pas une faiblesse. Notre nom reflète notre vision : "Neo" signifie nouveau, "Vita" signifie vie, et le "F" est un hommage à nos fondateurs et à l'unité de notre équipe. Ensemble, transformons les émotions climatiques en solutions humaines.
+              Chez NeoVifta, nous croyons que l&apos;éco-anxiété est un appel à agir, pas une faiblesse. Notre nom reflète notre vision : &quot;Neo&quot; signifie nouveau, &quot;Vita&quot; signifie vie, et le &quot;F&quot; est un hommage à nos fondateurs et à l&apos;unité de notre équipe. Ensemble, transformons les émotions climatiques en solutions humaines.
             </p>
           </motion.div>
         </div>

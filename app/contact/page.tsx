@@ -20,7 +20,7 @@ import {
 const teamEmails = [
   {
     name: 'Fatima Jamal',
-    email: 'fatima.jamal@neovifta.fr',
+    email: 'fj056085@gmail.com',
     role: 'Psychologue en formation',
   },
   {
@@ -30,7 +30,7 @@ const teamEmails = [
   },
   {
     name: 'Valentina Banzet',
-    email: 'valentina.banzet@neovifta.fr',
+    email: 'valentina.banzet@gmail.com',
     role: 'Cheffe de projet digital',
   },
 ];
