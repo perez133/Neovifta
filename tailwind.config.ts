@@ -10,12 +10,13 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-poppins)'],
+        sans: ['var(--font-worksans)'],
+        heading: ['var(--font-montserrat)'],
       },
       colors: {
-        neogreen: '#2E7D32',
-        neoyellow: '#FFC107',
-        neocean: '#0288D1',
+        neogreen: '#107A88',
+        neoyellow: '#ABD7CD',
+        neocean: '#107A88',
         neowhite: '#F5F5F5',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',

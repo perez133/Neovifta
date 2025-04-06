@@ -1,15 +1,21 @@
-import { Poppins } from 'next/font/google';
-import type { Metadata } from 'next';
+import './globals.css';
 import { Navbar } from '@/components/navbar';
 import { Footer } from '@/components/footer';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from '@/components/ui/toaster';
-import './globals.css';
+import type { Metadata } from 'next';
+import { Montserrat, Work_Sans } from 'next/font/google';
 
-const poppins = Poppins({
+const montserrat = Montserrat({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-poppins',
+  weight: ['400', '600', '700'],
+  variable: '--font-montserrat',
+});
+
+const worksans = Work_Sans({
+  subsets: ['latin'],
+  weight: ['300', '400', '500'],
+  variable: '--font-worksans',
 });
 
 export const metadata: Metadata = {
@@ -29,9 +35,12 @@ export default function RootLayout({
   return (
     <html lang="fr" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+        <link
+          rel="icon"
+          href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>"
+        />
       </head>
-      <body className={`${poppins.variable} font-sans bg-background`}>
+      <body className={`${montserrat.variable} ${worksans.variable} font-sans bg-background`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -40,9 +49,7 @@ export default function RootLayout({
         >
           <div className="flex flex-col min-h-screen">
             <Navbar />
-            <main className="flex-grow pt-16">
-              {children}
-            </main>
+            <main className="flex-grow pt-16">{children}</main>
             <Footer />
           </div>
           <Toaster />
