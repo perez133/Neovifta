@@ -24,7 +24,7 @@ const questions = [
     options: [
       "Je reste détaché(e)",
       "Je suis légèrement préoccupé(e)",
-      "Je ressens de l&apos;inquiétude",
+      "Je ressens de la peur ;inquiétude",
       "Je me sens très anxieux(se)"
     ]
   },
@@ -42,7 +42,7 @@ const questions = [
   },
   {
     question: "Comment réagissez-vous face aux comportements non-écologiques des autres ?",
-    options: ["Cela m&apos;est indifférent", "Je suis légèrement contrarié(e)", "Je me sens frustré(e)", "Je ressens une forte anxiété"]
+    options: ["Cela m'est indifférent", "Je suis légèrement contrarié(e)", "Je me sens frustré(e)", "Je ressens une forte anxiété"]
   },
   {
     question: "Les enjeux climatiques influencent-ils vos décisions quotidiennes ?",
@@ -54,10 +54,10 @@ const questions = [
   },
   {
     question: "Comment évaluez-vous votre capacité à agir face aux problèmes environnementaux ?",
-    options: ["Je me sens capable d&apos;agir", "J&apos;ai quelques doutes", "Je me sens souvent impuissant(e)", "Je me sens totalement dépassé(e)"]
+    options: ["Je me sens capable d&apos;agir", "J'ai quelques doutes", "Je me sens souvent impuissant(e)", "Je me sens totalement dépassé(e)"]
   },
   {
-    question: "Les problèmes environnementaux affectent-ils vos projets d&apos;avenir ?",
+    question: "Les problèmes environnementaux affectent-ils vos projets d'avenir ?",
     options: ["Pas du tout", "Un peu", "Significativement", "Très fortement"]
   }
 ];
@@ -159,10 +159,10 @@ export default function QuizPage() {
 
   const shareResults = () => {
     const analysis = getAnalysis();
-    const text = `J&apos;ai fait le test d&apos;éco-anxiété sur NeoVifta ! Mon niveau : ${analysis.level}`;
+    const text = `J'ai fait le test d&apos;éco-anxiété sur NeoVifta ! Mon niveau : ${analysis.level}`;
     if (navigator.share) {
       navigator.share({
-        title: "Mon résultat d&apos;éco-anxiété",
+        title: "Mon résultat d'éco-anxiété",
         text,
         url: window.location.href,
       }).catch((err) => console.error(err));

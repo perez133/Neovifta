@@ -33,7 +33,7 @@ export function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Contact</h3>
             <p className="text-gray-600 text-sm">
-              Email: contact@neovifta.fr<br />
+              Email: neovifta@gmail.com<br />
               Tél: +33 1 23 45 67 89
             </p>
           </div>

@@ -41,7 +41,10 @@ export default function AdminPage() {
   if (!isAllowed) return null;
 
   const quizCount = data.length;
-  const dates = data.map(d => new Date(d.date).toLocaleDateString());
+
+  // ✅ Correction de la date "Invalid Date"
+  const dates = data.map(d => new Date(d.created_at).toLocaleDateString('fr-FR'));
+
   const scores = data.map(d => d.score);
 
   const chartData = {
@@ -50,19 +53,18 @@ export default function AdminPage() {
       {
         label: 'Score du quiz',
         data: scores,
-        backgroundColor: 'rgba(34, 197, 94, 0.7)', // vert clair
+        backgroundColor: 'rgba(34, 197, 94, 0.7)', // vert
       }
     ]
   };
 
-  // Répartition par âge
+  // ✅ Données pour le graphique par âge
   const ageLabels = ['< 18', '18-24', '25-34', '35-44', '45-54', '55+'];
   const ageCounts = new Array(ageLabels.length).fill(0);
 
-  data.forEach((entry) => {
-    const age = Number(entry.ageGroup);
-    if (!isNaN(age) && age >= 0 && age < ageLabels.length) {
-      ageCounts[age]++;
+  data.forEach(entry => {
+    if (typeof entry.age_group === 'number' && entry.age_group >= 0 && entry.age_group < ageLabels.length) {
+      ageCounts[entry.age_group]++;
     }
   });
 
@@ -72,7 +74,7 @@ export default function AdminPage() {
       {
         label: 'Répartition par âge',
         data: ageCounts,
-        backgroundColor: '#08526E', // couleur secondaire cohérente
+        backgroundColor: 'rgba(15, 118, 110, 0.8)', // neogreen
       }
     ]
   };
@@ -115,10 +117,12 @@ export default function AdminPage() {
         📊 Le quiz a été complété <strong>{quizCount}</strong> fois.
       </p>
 
+      {/* ✅ Graphique des scores */}
       <div className="bg-white rounded-lg p-4 shadow">
         <Bar data={chartData} />
       </div>
 
+      {/* ✅ Graphique des âges */}
       <div className="bg-white rounded-lg p-4 shadow">
         <Bar data={ageChartData} />
       </div>

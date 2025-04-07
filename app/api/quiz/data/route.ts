@@ -1,14 +1,16 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
+import { supabase } from '@/lib/supabase';
 
 export async function GET() {
-  const filePath = path.join(process.cwd(), 'data', 'quiz.json');
+  try {
+    const { data, error } = await supabase.from('quiz').select('*');
 
-  if (!fs.existsSync(filePath)) {
-    return NextResponse.json([]);
+    if (error) {
+      return NextResponse.json({ error: error.message }, { status: 500 });
+    }
+
+    return NextResponse.json(data);
+  } catch (err) {
+    return NextResponse.json({ error: 'Erreur serveur' }, { status: 500 });
   }
-
-  const data = fs.readFileSync(filePath, 'utf-8');
-  return NextResponse.json(JSON.parse(data));
 }
