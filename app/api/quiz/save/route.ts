@@ -4,11 +4,10 @@ import path from 'path';
 
 export async function POST(req: NextRequest) {
   try {
-    const { score } = await req.json();
-
+    const { score, ageGroup } = await req.json();
     const filePath = path.join(process.cwd(), 'data', 'quiz.json');
-
     let existingData = [];
+
     if (fs.existsSync(filePath)) {
       const fileContent = fs.readFileSync(filePath, 'utf-8');
       if (fileContent.trim() !== '') {
@@ -18,6 +17,7 @@ export async function POST(req: NextRequest) {
 
     const newEntry = {
       score,
+      ageGroup,
       date: new Date().toISOString(),
     };
 

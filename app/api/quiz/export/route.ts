@@ -23,12 +23,19 @@ export async function GET(req: NextRequest) {
   const sheet = workbook.addWorksheet("Résultats Quiz");
 
   sheet.columns = [
-    { header: 'Nom', key: 'name', width: 20 },
     { header: 'Score', key: 'score', width: 10 },
+    { header: 'Tranche d’âge', key: 'ageGroup', width: 15 },
     { header: 'Date', key: 'date', width: 25 },
   ];
 
-  sheet.addRows(entries);
+  // on s’assure qu’il y a toujours un ageGroup, même si absent
+  const safeEntries = entries.map((entry: any) => ({
+    score: entry.score,
+    ageGroup: entry.ageGroup !== undefined ? entry.ageGroup : 'non défini',
+    date: entry.date,
+  }));
+
+  sheet.addRows(safeEntries);
 
   const buffer = await workbook.xlsx.writeBuffer();
 
